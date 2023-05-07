@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"runtime"
 
+	"github.com/devgarrido/godesde0/ejercicios"
 	"github.com/devgarrido/godesde0/variables"
 )
 
@@ -29,4 +30,8 @@ func main() {
 	default:
 		fmt.Printf("%s\n", os)
 	}
+
+	fmt.Println("********************************")
+	valor1, valor2 := ejercicios.Grefusa("10asd")
+	fmt.Println(valor1, valor2)
 }
