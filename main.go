@@ -32,6 +32,6 @@ func main() {
 	}
 
 	fmt.Println("********************************")
-	valor1, valor2 := ejercicios.Grefusa("10asd")
+	valor1, valor2 := ejercicios.Grefusa("50a")
 	fmt.Println(valor1, valor2)
 }
