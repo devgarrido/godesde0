@@ -1,7 +1,15 @@
 package main
 
-import "github.com/devgarrido/godesde0/variables"
+import (
+	"fmt"
+
+	"github.com/devgarrido/godesde0/variables"
+)
 
 func main() {
-	variables.MuestroEnteros()
+	var1, var2 := variables.ConviertoaTexto(1209)
+	if var1 {
+		fmt.Println("El valor es\n" + var2)
+	}
+
 }
