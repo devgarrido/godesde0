@@ -6,24 +6,24 @@ import (
 	"time"
 )
 
-var Nombre string
-var Estado bool
-var Sueldo float32
-var Fecha time.Time
+var Name string
+var Status bool
+var Salary float32
+var Date time.Time
 
-func RestoVariables() {
-	Nombre = "Antonio"
-	Estado = true
-	Sueldo = 1820.89
-	Fecha = time.Now()
+func OtherVariables() {
+	Name = "Antonio"
+	Status = true
+	Salary = 1820.89
+	Date = time.Now()
 
-	fmt.Println(Nombre)
-	fmt.Println(Estado)
-	fmt.Println(Sueldo)
-	fmt.Println(Fecha)
+	fmt.Println(Name)
+	fmt.Println(Status)
+	fmt.Println(Salary)
+	fmt.Println(Date)
 }
 
-func ConviertoaTexto(numero int) (bool, string) {
-	valor := strconv.Itoa(numero)
-	return true, valor
+func ConvertToText(num int) (bool, string) {
+	value := strconv.Itoa(num)
+	return true, value
 }
