@@ -2,14 +2,15 @@ package variables
 
 import "fmt"
 
-func MuestroEnteros() {
-	// Por declaration
-	var intcomun int
-	intde32 := int32(10)
-	intde64 := int64(100)
-	intcomun = 12
+var pf = fmt.Printf
 
-	fmt.Println("intcomun: ", intcomun)
-	fmt.Println("intde32: ", intde32)
-	fmt.Println("intde64: ", intde64)
+func ShowIntegers() {
+	// Declare variables
+	var intComun int
+	intde32 := int32(10)  // intde32 is an int32 variable
+	intde64 := int64(100) // intde64 is an int64 variable
+
+	pf("intComun: %d\n", intComun)
+	pf("intde32: %d\n", intde32)
+	pf("intde64: %d\n", intde64)
 }
