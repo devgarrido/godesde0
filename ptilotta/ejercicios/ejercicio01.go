@@ -2,7 +2,7 @@ package ejercicios
 
 import "strconv"
 
-func Grefusa(value string) (int, string) {
+func ConvertText(value string) (int, string) {
 	var message string
 	text, err := strconv.Atoi(value)
 	if err != nil {
