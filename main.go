@@ -1,19 +1,24 @@
 package main
 
 import (
-	// "fmt"
+	"github.com/devgarrido/godesde0/ptilotta/edteam/concept"
+	// "github.com/devgarrido/godesde0/ptilotta/funciones"
+	// "github.com/devgarrido/godesde0/ptilotta/files"
 	// "github.com/devgarrido/godesde0/ptilotta/iteraciones"
 	// "github.com/devgarrido/godesde0/ptilotta/teclado"
 	// "github.com/devgarrido/godesde0/ptilotta/slices"
 	// "github.com/devgarrido/godesde0/ptilotta/arrays"
 	// "github.com/devgarrido/godesde0/ptilotta/punteros"
-	"github.com/devgarrido/godesde0/ptilotta/ejercicios"
+	// "github.com/devgarrido/godesde0/ptilotta/ejercicios"
 	// "github.com/devgarrido/godesde0/ptilotta/variables"
 )
 
 func main() {
-
-	ejercicios.TablaMultiplicar()
+	concept.ShowPanicRecover()
+	// concept.ShowStructs()
+	// funciones.Calculos()
+	// files.ReadFile()
+	// println(ejercicios.TablaMultiplicar())
 	// ejercicios.IntroNum()
 	// iteraciones.Iterar()
 	// teclado.IngresoNumeros()

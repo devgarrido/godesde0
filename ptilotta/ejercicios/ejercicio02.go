@@ -7,8 +7,6 @@ import (
 	"strconv"
 )
 
-var pf = fmt.Printf
-
 func IntroNum() {
 	scanner := bufio.NewScanner(os.Stdin)
 	println("Ingrese un número: ")
@@ -24,22 +22,25 @@ func IntroNum() {
 	}
 }
 
-func TablaMultiplicar() {
+func TablaMultiplicar() string {
 	scanner := bufio.NewScanner(os.Stdin)
-
+	var numero int
+	var err error
+	var resultado string
 	for {
 		fmt.Println("Ingrese un número: ")
 		if scanner.Scan() {
-			numero, err := strconv.Atoi(scanner.Text())
+			numero, err = strconv.Atoi(scanner.Text())
 			if err != nil {
 				continue
 			} else {
-				for i := 1; i <= 10; i++ {
-					pf("numero %d * %d, es = % d\n", numero, i, numero*i)
-				}
 				break
 			}
 		}
-
 	}
+	for i := 1; i <= 10; i++ {
+		resultado += fmt.Sprintf("%d x %d = % d\n", numero, i, numero*i)
+	}
+
+	return resultado
 }
